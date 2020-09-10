@@ -1,0 +1,332 @@
+.page-title {
+    box-sizing: border-box;
+}
+
+.page-title .product-akali {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.page-title .product-2 {
+    margin: 0;
+    padding: 0;
+}
+
+.page-title .product-2 .product-list {
+    margin: 0;
+    padding: 0;
+}
+
+.mfp-close {
+    display: none;
+}
+
+
+/* side-bar */
+
+.page-title .page-title-sub {
+    display: flex;
+    justify-content: space-around;
+}
+
+.page-title .page-title-sub a {
+    text-decoration: none;
+}
+
+.page-title .page-title-sub .right-select {
+    display: none;
+}
+
+.page-title .page-title-sub .filter span {
+    display: inline;
+}
+
+.page-title .page-title-sub .left-title a {
+    color: rgb(112, 112, 112);
+}
+
+.page-title .page-title-sub .filter {
+    padding: 10px 0;
+}
+
+.page-title .page-title-sub .filter select {
+    outline: none;
+    width: 300px;
+    padding: 10px 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(downwards-arrow-key.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.page-title .page-title-sub .left-title {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 20px 0;
+}
+
+.page-title .page-title-sub .left-title a:active {
+    color: rgb(54, 54, 54);
+}
+
+.page-title .page-title-sub .left-title span {
+    font-weight: bold;
+}
+
+.page-title .page-title-sub .left-title span {
+    margin: 0 .3em;
+}
+
+.page-title .page-title-sub .left-title .b {
+    color: rgb(145, 142, 142);
+}
+
+.sidenav {
+    display: flex;
+}
+
+.sidenav .wraper {
+    margin: 10px;
+}
+
+.sidenav .wraper aside {
+    margin: 10px;
+    padding: 20px 5px;
+    background-color: rgb(240, 240, 240);
+}
+
+.sidenav .wraper aside ul {
+    padding: 0;
+    margin: 16px;
+}
+
+.sidenav .wraper aside ul li {
+    padding: 0;
+    list-style: none;
+}
+
+.sidenav .wraper aside ul li img {
+    max-width: 100px;
+}
+
+.sidenav .wraper .first-aside a:nth-child(2n) {
+    background-color: #fff;
+}
+
+.sidenav a {
+    padding: 16px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #424242;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .title-bar {
+    display: block;
+    background-color: #cc2121;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 16px;
+    font-size: 20px;
+}
+
+.sidenav .table {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.sidenav .flex-li {
+    display: table-cell;
+    margin-bottom: 20px;
+}
+
+.sidenav .flex-li span {
+    font-weight: bold;
+    transition: ease .4s;
+}
+
+.sidenav .flex-li .aa:hover {
+    font-weight: bold;
+    color: #b42323;
+    transition: ease .4s;
+}
+
+.sidenav del {
+    display: block;
+}
+
+.sidenav .table .price-side {
+    padding: 10px 0;
+    display: flex;
+}
+
+.sidenav .table .price-side del {
+    padding: 0 10px 0 0;
+    color: #b4232369;
+}
+
+.sidenav .table .price-side ins {
+    color: #b42323;
+}
+
+@media screen and (max-width:768px) {
+    .mfp-close {
+        display: block;
+    }
+    .close-background::before {
+        content: "";
+        background-color: #111111;
+        width: 100%;
+        height: 1000px;
+        position: absolute;
+        opacity: .3;
+        right: 0;
+        top: 0;
+    }
+    .mfp-close {
+        display: none;
+        cursor: pointer;
+        background-color: transparent;
+        border: 0;
+        opacity: .5;
+        font-size: 32px;
+        text-decoration: none;
+        user-select: none;
+        outline: none;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        animation: close 1s forwards;
+    }
+    @keyframes close {
+        0% {
+            transform: translateY(20px)
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(-0)
+        }
+    }
+    .page-title {}
+    .page-title .product-akali {
+        margin: 0 auto 60px auto;
+    }
+    #mySidenav {
+        transform: translateX(-400px);
+    }
+    .page-title .page-title-sub {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+    }
+    .page-title .page-title-sub .right-select {
+        display: block;
+    }
+    .page-title .page-title-sub .right-select .navbar-icon {
+        cursor: pointer;
+        transition: all .6s;
+    }
+    .page-title .page-title-sub .filter span {
+        display: none;
+    }
+    .page-title .page-title-sub .filter select {
+        outline: none;
+        width: 300px;
+        padding: 10px 5px;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url(downwards-arrow-key.png);
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    select::-ms-expand {
+        display: none;
+    }
+    .sidenav {
+        height: 100%;
+        background-color: #FAFAFA;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 40px;
+        transition: 0.5s;
+    }
+    .sidenav .wraper {
+        margin: 10px;
+    }
+    .sidenav .wraper aside {
+        margin: 10px;
+        padding: 20px 5px;
+        background-color: rgb(240, 240, 240);
+    }
+    .sidenav .wraper aside ul {
+        padding: 0;
+        margin: 16px;
+    }
+    .sidenav .wraper aside ul li {
+        padding: 0;
+        list-style: none;
+    }
+    .sidenav .wraper aside ul li img {
+        max-width: 100px;
+    }
+    .sidenav .wraper .first-aside a:nth-child(2n) {
+        background-color: #fff;
+    }
+    .sidenav a {
+        padding: 16px 24px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #424242;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav .title-bar {
+        display: block;
+        background-color: #cc2121;
+        font-weight: bold;
+        color: aliceblue;
+        padding: 16px;
+        font-size: 20px;
+    }
+    .sidenav .table {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .sidenav .flex-li {
+        display: table-cell;
+        margin-bottom: 20px;
+    }
+    .sidenav .flex-li span {
+        font-weight: bold;
+        transition: ease .4s;
+    }
+    .sidenav .flex-li .aa:hover {
+        font-weight: bold;
+        color: #b42323;
+        transition: ease .4s;
+    }
+    .sidenav del {
+        display: block;
+    }
+    .sidenav .table .price-side {
+        padding: 10px 0;
+        display: flex;
+    }
+    .sidenav .table .price-side del {
+        padding: 0 10px 0 0;
+        color: #b4232369;
+    }
+    .sidenav .table .price-side ins {
+        color: #b42323;
+    }
+}
